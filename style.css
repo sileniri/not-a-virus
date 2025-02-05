@@ -1,0 +1,64 @@
+body {
+    height: 100vh;
+    background-color: hsl(0, 0%, 80%);
+    overflow: hidden;
+}
+
+.windowContainer {
+    height: 100%;
+    display: grid;
+    grid-template: 1fr 6fr 1fr / 2fr 3fr 2fr;
+    gap: 20px;
+}
+
+.titleContainer {
+    grid-column: span 3;
+}
+
+.gameContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: hsl(0, 0%, 10%);
+    border-radius: 20px;
+    filter: blur(5px);
+}
+
+.ball {
+    width: 15vw;
+    height:15vw;
+    border-radius: 50%;
+    background-color: hsl(110, 67%, 34%);
+}
+
+h1 {
+    font-family: 'tiny5';
+    font-size: 6em;
+    line-height: 0;
+}
+
+span {
+    color: hsl(110, 70%, 40%);
+}
+
+p {
+    font-family: 'flow circular';
+    font-size: 2em;
+    color: hsl(0, 0%, 50%);
+}
+
+.loading {
+    display: flex;
+    justify-self: center;
+    height: 50px;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 70%);
+    font-family: 'open sans';
+    border-radius: 2px;
+    font-size: 2em;
+    position: relative;
+    top: -300px;
+}
